@@ -89,7 +89,7 @@ void sendRawValue(int pin)
   char buf[5];
   sprintf(buf, "%d", analogRead(pin));
 
-  String s2 = "<RawValue xmlns:i=\http://www.w3.org/2001/XMLSchema-instance\">";
+  String s2 = "<RawValue xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">";
   s2 += buf;
   s2 += "</RawValue>";
 
